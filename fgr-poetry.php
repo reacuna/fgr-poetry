@@ -64,7 +64,7 @@ function poem_updated_messages( $messages ) {
 		8 => sprintf( __('Poem submitted. <a target="_blank" href="%s">Preview poem</a>', 'fgr-poetry'), esc_url( add_query_arg( 'preview', 'true', $permalink ) ) ),
 		9 => sprintf( __('Poem scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview poem</a>', 'fgr-poetry'),
 		// translators: Publish box date format, see http://php.net/date
-		date_i18n( __( 'M j, Y @ G:i' ), strtotime( $post->post_date ) ), esc_url( $permalink ) ),
+		date_i18n( __( 'M j, Y @ G:i', 'fgr-poetry' ), strtotime( $post->post_date ) ), esc_url( $permalink ) ),
 		10 => sprintf( __('Poem draft updated. <a target="_blank" href="%s">Preview poem</a>', 'fgr-poetry'), esc_url( add_query_arg( 'preview', 'true', $permalink ) ) ),
 	);
 

@@ -1,0 +1,141 @@
+# Copyright (C) 2016 Raúl Acuña
+# This file is distributed under the same license as the FGR Poetry package.
+msgid ""
+msgstr ""
+"Project-Id-Version: FGR Poetry 0.1-alpha\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/fgr-poetry\n"
+"POT-Creation-Date: 2016-07-23 03:39:33+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: fgr-poetry.php:17 fgr-poetry.php:29
+msgid "Poems"
+msgstr ""
+
+#: fgr-poetry.php:18
+msgid "Poem"
+msgstr ""
+
+#: fgr-poetry.php:19
+msgid "All Poems"
+msgstr ""
+
+#: fgr-poetry.php:20
+msgid "New poem"
+msgstr ""
+
+#: fgr-poetry.php:21
+msgid "Add New"
+msgstr ""
+
+#: fgr-poetry.php:22
+msgid "Add New poem"
+msgstr ""
+
+#: fgr-poetry.php:23
+msgid "Edit poem"
+msgstr ""
+
+#: fgr-poetry.php:24
+msgid "View poem"
+msgstr ""
+
+#: fgr-poetry.php:25
+msgid "Search poems"
+msgstr ""
+
+#: fgr-poetry.php:26
+msgid "No poems found"
+msgstr ""
+
+#: fgr-poetry.php:27
+msgid "No poems found in trash"
+msgstr ""
+
+#: fgr-poetry.php:28
+msgid "Parent poem"
+msgstr ""
+
+#: fgr-poetry.php:56
+msgid "Poem updated. <a target=\"_blank\" href=\"%s\">View poem</a>"
+msgstr ""
+
+#: fgr-poetry.php:57
+msgid "Custom field updated."
+msgstr ""
+
+#: fgr-poetry.php:58
+msgid "Custom field deleted."
+msgstr ""
+
+#: fgr-poetry.php:59
+msgid "Poem updated."
+msgstr ""
+
+#: fgr-poetry.php:61
+#. translators: %s: date and time of the revision
+msgid "Poem restored to revision from %s"
+msgstr ""
+
+#: fgr-poetry.php:62
+msgid "Poem published. <a href=\"%s\">View poem</a>"
+msgstr ""
+
+#: fgr-poetry.php:63
+msgid "Poem saved."
+msgstr ""
+
+#: fgr-poetry.php:64
+msgid "Poem submitted. <a target=\"_blank\" href=\"%s\">Preview poem</a>"
+msgstr ""
+
+#: fgr-poetry.php:65
+msgid ""
+"Poem scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">Preview poem</a>"
+msgstr ""
+
+#: fgr-poetry.php:67
+#. translators: Publish box date format, see http:php.net/date
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: fgr-poetry.php:68
+msgid "Poem draft updated. <a target=\"_blank\" href=\"%s\">Preview poem</a>"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "FGR Poetry"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.reacuna.me/poetry-plugin"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Add support to publish poems"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Raúl Acuña"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.reacuna.me"
+msgstr ""
