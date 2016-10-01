@@ -11,16 +11,16 @@
  * @package FGR Poetry
  */
 
-function generate_post_type($name, $icon, $labels) {
+function generate_post_type($name, $slug, $icon, $labels) {
 	register_post_type($name, array(
 		'labels' =>$labels,
 		'public'            => true,
-		'hierarchical'      => true,
+		'hierarchical'      => false,
 		'show_ui'           => true,
 		'show_in_nav_menus' => true,
 		'supports'          => array( 'title', 'editor', 'page-attributes', 'custom-fields', 'post-formats' ),
 		'has_archive'       => true,
-		'rewrite'           => true,
+		'rewrite'           => array( 'slug' => $slug ),
 		'query_var'         => true,
 		'menu_icon'         => $icon,
 		'show_in_menu'      => 'edit.php?post_type=page',
@@ -78,9 +78,9 @@ function poem_init() {
 		'parent_item_colon'   => __( 'Parent essay', 'fgr-poetry' ),
 		'menu_name'           => __( 'Essays', 'fgr-poetry' ),
 	);
-	generate_post_type('poem', 'dashicons-admin-post', $poem_labels);
-	generate_post_type('speech', 'dashicons-book', $speech_labels);
-	generate_post_type('essay', 'dashicons-book-alt', $essay_labels);
+	generate_post_type('poem', __('poems', 'fgr-poetry'),'dashicons-admin-post', $poem_labels);
+	generate_post_type('speech', __('speeches', 'fgr-poetry'),'dashicons-book', $speech_labels);
+	generate_post_type('essay', __('essays', 'fgr-poetry'),'dashicons-book-alt', $essay_labels);
 }
 add_action( 'init', 'poem_init' );
 
