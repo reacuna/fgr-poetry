@@ -32,6 +32,7 @@ function generate_post_type($name, $icon, $labels) {
 }
 
 function poem_init() {
+	load_plugin_textdomain( 'fgr-poetry', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 	$poem_labels = array(
 		'name'                => __( 'Poems', 'fgr-poetry' ),
 		'singular_name'       => __( 'Poem', 'fgr-poetry' ),
