@@ -11,9 +11,9 @@
  * @package FGR Poetry
  */
 
-function generate_post_type(name, icon, labels) {
-	register_post_type(name, array(
-		'labels' =>labels,
+function generate_post_type($name, $icon, $labels) {
+	register_post_type($name, array(
+		'labels' =>$labels,
 		'public'            => true,
 		'hierarchical'      => true,
 		'show_ui'           => true,
@@ -22,10 +22,10 @@ function generate_post_type(name, icon, labels) {
 		'has_archive'       => true,
 		'rewrite'           => true,
 		'query_var'         => true,
-		'menu_icon'         => icon,
+		'menu_icon'         => $icon,
 		'menu-position'     => 20,
 		'show_in_rest'      => true,
-		'rest_base'         => name,
+		'rest_base'         => $name,
 		'rest_controller_class' => 'WP_REST_Posts_Controller',
 	));
 }
