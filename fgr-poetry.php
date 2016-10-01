@@ -23,7 +23,8 @@ function generate_post_type($name, $icon, $labels) {
 		'rewrite'           => true,
 		'query_var'         => true,
 		'menu_icon'         => $icon,
-		'menu-position'     => 20,
+		'show_in_menu'      => 'edit.php?post_type=page',
+		'menu-position'     => 10,
 		'show_in_rest'      => true,
 		'rest_base'         => $name,
 		'rest_controller_class' => 'WP_REST_Posts_Controller',
@@ -31,44 +32,59 @@ function generate_post_type($name, $icon, $labels) {
 }
 
 function poem_init() {
-	register_post_type( 'poem', array(
-		'labels'            => array(
-			'name'                => __( 'Poems', 'fgr-poetry' ),
-			'singular_name'       => __( 'Poem', 'fgr-poetry' ),
-			'all_items'           => __( 'All Poems', 'fgr-poetry' ),
-			'new_item'            => __( 'New poem', 'fgr-poetry' ),
-			'add_new'             => __( 'Add New', 'fgr-poetry' ),
-			'add_new_item'        => __( 'Add New poem', 'fgr-poetry' ),
-			'edit_item'           => __( 'Edit poem', 'fgr-poetry' ),
-			'view_item'           => __( 'View poem', 'fgr-poetry' ),
-			'search_items'        => __( 'Search poems', 'fgr-poetry' ),
-			'not_found'           => __( 'No poems found', 'fgr-poetry' ),
-			'not_found_in_trash'  => __( 'No poems found in trash', 'fgr-poetry' ),
-			'parent_item_colon'   => __( 'Parent poem', 'fgr-poetry' ),
-			'menu_name'           => __( 'Poems', 'fgr-poetry' ),
-		),
-		'public'            => true,
-		'hierarchical'      => true,
-		'show_ui'           => true,
-		'show_in_nav_menus' => true,
-		'supports'          => array( 'title', 'editor', 'page-attributes', 'custom-fields', 'post-formats' ),
-		'has_archive'       => true,
-		'rewrite'           => true,
-		'query_var'         => true,
-		'menu_icon'         => 'dashicons-admin-post',
-		'menu-position'     => 20,
-		'show_in_rest'      => true,
-		'rest_base'         => 'poem',
-		'rest_controller_class' => 'WP_REST_Posts_Controller',
-	) );
-
-	generate_post_type('speech', 'dashicons-book', array());
-	generate_post_type('essay', 'dashicons-book-alt', array());
+	$poem_labels = array(
+		'name'                => __( 'Poems', 'fgr-poetry' ),
+		'singular_name'       => __( 'Poem', 'fgr-poetry' ),
+		'all_items'           => __( 'All Poems', 'fgr-poetry' ),
+		'new_item'            => __( 'New poem', 'fgr-poetry' ),
+		'add_new'             => __( 'Add New', 'fgr-poetry' ),
+		'add_new_item'        => __( 'Add New poem', 'fgr-poetry' ),
+		'edit_item'           => __( 'Edit poem', 'fgr-poetry' ),
+		'view_item'           => __( 'View poem', 'fgr-poetry' ),
+		'search_items'        => __( 'Search poems', 'fgr-poetry' ),
+		'not_found'           => __( 'No poems found', 'fgr-poetry' ),
+		'not_found_in_trash'  => __( 'No poems found in trash', 'fgr-poetry' ),
+		'parent_item_colon'   => __( 'Parent poem', 'fgr-poetry' ),
+		'menu_name'           => __( 'Poems', 'fgr-poetry' ),
+	);
+	$speech_labels = array(
+		'name'                => __( 'Speeches', 'fgr-poetry' ),
+		'singular_name'       => __( 'Speech', 'fgr-poetry' ),
+		'all_items'           => __( 'All Speeches', 'fgr-poetry' ),
+		'new_item'            => __( 'New speech', 'fgr-poetry' ),
+		'add_new'             => __( 'Add New', 'fgr-poetry' ),
+		'add_new_item'        => __( 'Add New speech', 'fgr-poetry' ),
+		'edit_item'           => __( 'Edit speech', 'fgr-poetry' ),
+		'view_item'           => __( 'View speech', 'fgr-poetry' ),
+		'search_items'        => __( 'Search speeches', 'fgr-poetry' ),
+		'not_found'           => __( 'No speeches found', 'fgr-poetry' ),
+		'not_found_in_trash'  => __( 'No speeches found in trash', 'fgr-poetry' ),
+		'parent_item_colon'   => __( 'Parent speech', 'fgr-poetry' ),
+		'menu_name'           => __( 'Speeches', 'fgr-poetry' ),
+	);
+	$essay_labels = array(
+		'name'                => __( 'Essays', 'fgr-poetry' ),
+		'singular_name'       => __( 'Essay', 'fgr-poetry' ),
+		'all_items'           => __( 'All Essays', 'fgr-poetry' ),
+		'new_item'            => __( 'New essay', 'fgr-poetry' ),
+		'add_new'             => __( 'Add New', 'fgr-poetry' ),
+		'add_new_item'        => __( 'Add New essay', 'fgr-poetry' ),
+		'edit_item'           => __( 'Edit essay', 'fgr-poetry' ),
+		'view_item'           => __( 'View essay', 'fgr-poetry' ),
+		'search_items'        => __( 'Search essays', 'fgr-poetry' ),
+		'not_found'           => __( 'No essays found', 'fgr-poetry' ),
+		'not_found_in_trash'  => __( 'No essays found in trash', 'fgr-poetry' ),
+		'parent_item_colon'   => __( 'Parent essay', 'fgr-poetry' ),
+		'menu_name'           => __( 'Essays', 'fgr-poetry' ),
+	);
+	generate_post_type('poem', 'dashicons-admin-post', $poem_labels);
+	generate_post_type('speech', 'dashicons-book', $speech_labels);
+	generate_post_type('essay', 'dashicons-book-alt', $essay_labels);
 }
 add_action( 'init', 'poem_init' );
 
 function poem_updated_messages( $messages ) {
-	global $post;
+	$post = get_post();
 
 	$permalink = get_permalink( $post );
 
