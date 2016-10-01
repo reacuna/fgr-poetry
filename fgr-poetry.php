@@ -11,6 +11,25 @@
  * @package FGR Poetry
  */
 
+function generate_post_type(name, icon, labels) {
+	register_post_type(name, array(
+		'labels' =>labels,
+		'public'            => true,
+		'hierarchical'      => true,
+		'show_ui'           => true,
+		'show_in_nav_menus' => true,
+		'supports'          => array( 'title', 'editor', 'page-attributes', 'custom-fields', 'post-formats' ),
+		'has_archive'       => true,
+		'rewrite'           => true,
+		'query_var'         => true,
+		'menu_icon'         => icon,
+		'menu-position'     => 20,
+		'show_in_rest'      => true,
+		'rest_base'         => name,
+		'rest_controller_class' => 'WP_REST_Posts_Controller',
+	));
+}
+
 function poem_init() {
 	register_post_type( 'poem', array(
 		'labels'            => array(
@@ -43,6 +62,8 @@ function poem_init() {
 		'rest_controller_class' => 'WP_REST_Posts_Controller',
 	) );
 
+	generate_post_type('speech', 'dashicons-book', array());
+	generate_post_type('essay', 'dashicons-book-alt', array());
 }
 add_action( 'init', 'poem_init' );
 
