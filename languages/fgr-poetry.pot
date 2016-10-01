@@ -1,122 +1,198 @@
-# Copyright (C) 2016 Raúl Acuña
+# Copyright (C) 2016 FGR Poetry
 # This file is distributed under the same license as the FGR Poetry package.
 msgid ""
 msgstr ""
 "Project-Id-Version: FGR Poetry 0.1-alpha\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/fgr-poetry\n"
-"POT-Creation-Date: 2016-07-23 03:39:33+00:00\n"
+"POT-Creation-Date: 2016-10-01 20:42:42+00:00\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 0.5.4\n"
-"X-Poedit-KeywordsList: "
-"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
-"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
-"Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Country: United States\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-Basepath: ../\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-Bookmarks: \n"
-"X-Textdomain-Support: yes\n"
 
-#: fgr-poetry.php:17 fgr-poetry.php:29
+#: fgr-poetry.php:36 fgr-poetry.php:48
 msgid "Poems"
 msgstr ""
 
-#: fgr-poetry.php:18
+#: fgr-poetry.php:37
 msgid "Poem"
 msgstr ""
 
-#: fgr-poetry.php:19
+#: fgr-poetry.php:38
 msgid "All Poems"
 msgstr ""
 
-#: fgr-poetry.php:20
+#: fgr-poetry.php:39
 msgid "New poem"
 msgstr ""
 
-#: fgr-poetry.php:21
+#: fgr-poetry.php:40 fgr-poetry.php:55 fgr-poetry.php:70
 msgid "Add New"
 msgstr ""
 
-#: fgr-poetry.php:22
+#: fgr-poetry.php:41
 msgid "Add New poem"
 msgstr ""
 
-#: fgr-poetry.php:23
+#: fgr-poetry.php:42
 msgid "Edit poem"
 msgstr ""
 
-#: fgr-poetry.php:24
+#: fgr-poetry.php:43
 msgid "View poem"
 msgstr ""
 
-#: fgr-poetry.php:25
+#: fgr-poetry.php:44
 msgid "Search poems"
 msgstr ""
 
-#: fgr-poetry.php:26
+#: fgr-poetry.php:45
 msgid "No poems found"
 msgstr ""
 
-#: fgr-poetry.php:27
+#: fgr-poetry.php:46
 msgid "No poems found in trash"
 msgstr ""
 
-#: fgr-poetry.php:28
+#: fgr-poetry.php:47
 msgid "Parent poem"
 msgstr ""
 
+#: fgr-poetry.php:51 fgr-poetry.php:63
+msgid "Speeches"
+msgstr ""
+
+#: fgr-poetry.php:52
+msgid "Speech"
+msgstr ""
+
+#: fgr-poetry.php:53
+msgid "All Speeches"
+msgstr ""
+
+#: fgr-poetry.php:54
+msgid "New speech"
+msgstr ""
+
 #: fgr-poetry.php:56
-msgid "Poem updated. <a target=\"_blank\" href=\"%s\">View poem</a>"
+msgid "Add New speech"
 msgstr ""
 
 #: fgr-poetry.php:57
-msgid "Custom field updated."
+msgid "Edit speech"
 msgstr ""
 
 #: fgr-poetry.php:58
-msgid "Custom field deleted."
+msgid "View speech"
 msgstr ""
 
 #: fgr-poetry.php:59
-msgid "Poem updated."
+msgid "Search speeches"
+msgstr ""
+
+#: fgr-poetry.php:60
+msgid "No speeches found"
 msgstr ""
 
 #: fgr-poetry.php:61
-#. translators: %s: date and time of the revision
-msgid "Poem restored to revision from %s"
+msgid "No speeches found in trash"
 msgstr ""
 
 #: fgr-poetry.php:62
-msgid "Poem published. <a href=\"%s\">View poem</a>"
+msgid "Parent speech"
 msgstr ""
 
-#: fgr-poetry.php:63
-msgid "Poem saved."
-msgstr ""
-
-#: fgr-poetry.php:64
-msgid "Poem submitted. <a target=\"_blank\" href=\"%s\">Preview poem</a>"
-msgstr ""
-
-#: fgr-poetry.php:65
-msgid ""
-"Poem scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
-"href=\"%2$s\">Preview poem</a>"
+#: fgr-poetry.php:66 fgr-poetry.php:78
+msgid "Essays"
 msgstr ""
 
 #: fgr-poetry.php:67
-#. translators: Publish box date format, see http:php.net/date
-msgid "M j, Y @ G:i"
+msgid "Essay"
 msgstr ""
 
 #: fgr-poetry.php:68
+msgid "All Essays"
+msgstr ""
+
+#: fgr-poetry.php:69
+msgid "New essay"
+msgstr ""
+
+#: fgr-poetry.php:71
+msgid "Add New essay"
+msgstr ""
+
+#: fgr-poetry.php:72
+msgid "Edit essay"
+msgstr ""
+
+#: fgr-poetry.php:73
+msgid "View essay"
+msgstr ""
+
+#: fgr-poetry.php:74
+msgid "Search essays"
+msgstr ""
+
+#: fgr-poetry.php:75
+msgid "No essays found"
+msgstr ""
+
+#: fgr-poetry.php:76
+msgid "No essays found in trash"
+msgstr ""
+
+#: fgr-poetry.php:77
+msgid "Parent essay"
+msgstr ""
+
+#: fgr-poetry.php:93
+msgid "Poem updated. <a target=\"_blank\" href=\"%s\">View poem</a>"
+msgstr ""
+
+#: fgr-poetry.php:94
+msgid "Custom field updated."
+msgstr ""
+
+#: fgr-poetry.php:95
+msgid "Custom field deleted."
+msgstr ""
+
+#: fgr-poetry.php:96
+msgid "Poem updated."
+msgstr ""
+
+#. translators: %s: date and time of the revision
+#: fgr-poetry.php:98
+msgid "Poem restored to revision from %s"
+msgstr ""
+
+#: fgr-poetry.php:99
+msgid "Poem published. <a href=\"%s\">View poem</a>"
+msgstr ""
+
+#: fgr-poetry.php:100
+msgid "Poem saved."
+msgstr ""
+
+#: fgr-poetry.php:101
+msgid "Poem submitted. <a target=\"_blank\" href=\"%s\">Preview poem</a>"
+msgstr ""
+
+#: fgr-poetry.php:102
+msgid ""
+"Poem scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Preview poem</a>"
+msgstr ""
+
+#. translators: Publish box date format, see http://php.net/date
+#: fgr-poetry.php:104
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: fgr-poetry.php:105
 msgid "Poem draft updated. <a target=\"_blank\" href=\"%s\">Preview poem</a>"
 msgstr ""
 
