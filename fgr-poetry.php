@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: FGR Poetry
- * Version: 0.1-alpha
+ * Version: 0.2
  * Description: Add support to publish poems
  * Author: Raúl Acuña
  * Author URI: https://www.reacuna.me
