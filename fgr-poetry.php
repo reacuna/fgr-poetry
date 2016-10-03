@@ -15,7 +15,7 @@ function generate_post_type($name, $slug, $icon, $labels) {
 	register_post_type($name, array(
 		'labels' =>$labels,
 		'public'            => true,
-		'hierarchical'      => false,
+		'hierarchical'      => true,
 		'show_ui'           => true,
 		'show_in_nav_menus' => true,
 		'supports'          => array( 'title', 'editor', 'page-attributes', 'custom-fields', 'post-formats' ),
