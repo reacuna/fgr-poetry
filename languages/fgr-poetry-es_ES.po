@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FGR Poetry 0.1-alpha\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/fgr-poetry\n"
-"POT-Creation-Date: 2016-10-01 18:37-0300\n"
-"PO-Revision-Date: 2016-10-01 18:37-0300\n"
+"POT-Creation-Date: 2016-10-09 19:47-0300\n"
+"PO-Revision-Date: 2016-10-09 19:47-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -163,41 +163,41 @@ msgstr "discursos"
 msgid "essays"
 msgstr "ensayos"
 
-#: fgr-poetry.php:94
+#: fgr-poetry.php:93
 msgid "Poem updated. <a target=\"_blank\" href=\"%s\">View poem</a>"
 msgstr "Poema actualizado. <a target=\"_blank\" href=\"%s\">Ver poema</a>"
 
-#: fgr-poetry.php:95
+#: fgr-poetry.php:94
 msgid "Custom field updated."
 msgstr "Campo personalizado actualizado."
 
-#: fgr-poetry.php:96
+#: fgr-poetry.php:95
 msgid "Custom field deleted."
 msgstr "Campo personalizado eliminado."
 
-#: fgr-poetry.php:97
+#: fgr-poetry.php:96
 msgid "Poem updated."
 msgstr "Poema actualizado."
 
 #. translators: %s: date and time of the revision
-#: fgr-poetry.php:99
+#: fgr-poetry.php:98
 msgid "Poem restored to revision from %s"
 msgstr "Poema restaurado a la revisión del %s"
 
-#: fgr-poetry.php:100
+#: fgr-poetry.php:99
 msgid "Poem published. <a href=\"%s\">View poem</a>"
 msgstr "Poema publicado. <a href=\"%s\">Ver poema</a>"
 
-#: fgr-poetry.php:101
+#: fgr-poetry.php:100
 msgid "Poem saved."
 msgstr "Poema guardado."
 
-#: fgr-poetry.php:102
+#: fgr-poetry.php:101
 msgid "Poem submitted. <a target=\"_blank\" href=\"%s\">Preview poem</a>"
 msgstr ""
 "Poema enviado. <a target=\"_blank\" href=\"%s\">Previsualizar poema</a>"
 
-#: fgr-poetry.php:103
+#: fgr-poetry.php:102
 msgid ""
 "Poem scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
 "\">Preview poem</a>"
@@ -206,11 +206,11 @@ msgstr ""
 "href=\"%2$s\">Previsualizar poema</a>"
 
 #. translators: Publish box date format, see http://php.net/date
-#: fgr-poetry.php:105
+#: fgr-poetry.php:104
 msgid "M j, Y @ G:i"
 msgstr "j M Y @ G:i"
 
-#: fgr-poetry.php:106
+#: fgr-poetry.php:105
 msgid "Poem draft updated. <a target=\"_blank\" href=\"%s\">Preview poem</a>"
 msgstr ""
 "Borrador del poema actualizado. <a target=\"_blank\" href=\"%s"
