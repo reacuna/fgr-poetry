@@ -82,7 +82,6 @@ function poem_init() {
 	generate_post_type('speech', __('speeches', 'fgr-poetry'),'dashicons-book', $speech_labels);
 	generate_post_type('essay', __('essays', 'fgr-poetry'),'dashicons-book-alt', $essay_labels);
 }
-add_action( 'init', 'poem_init' );
 
 function poem_updated_messages( $messages ) {
 	$post = get_post();
@@ -108,4 +107,19 @@ function poem_updated_messages( $messages ) {
 
 	return $messages;
 }
+
+function fgr_poetry_custom_type_order( $orderby ) {
+	global $wpdb;
+	$query_type = get_query_var("post_type");
+	$is_our_types = ($query_type == "essay" || $query_type == "poem" || $query_type == "speech");
+	// Check if the query is for an archive
+	if ( is_archive() && $is_our_types ) {
+		// Query was for archive, then set order
+		return "$wpdb->posts.post_title ASC";
+	}
+	return $orderby;
+}
+
+add_action( 'init', 'poem_init' );
 add_filter( 'post_updated_messages', 'poem_updated_messages' );
+add_filter( 'posts_orderby', 'fgr_poetry_custom_type_order' );
